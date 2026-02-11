@@ -26,7 +26,6 @@ resource "aws_s3_bucket_policy" "staging" {
 
 resource "aws_s3_bucket" "staging_bucket" {
   bucket = var.bucket_name
-  acl    = "private"
 }
 
 resource "aws_s3_bucket_public_access_block" "staging_bucket" {
